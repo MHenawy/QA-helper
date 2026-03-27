@@ -1,0 +1,35 @@
+﻿// question: 0  name: Switch category to $course$/top/ESSAY
+$CATEGORY: $course$/top/ESSAY
+
+
+// question: 0  name: Switch category to $course$/top/ESSAY/TOPIC 10
+$CATEGORY: $course$/top/ESSAY/TOPIC 10
+
+
+// question: 127138  name: Q1
+::Q1::[html]<p dir\="RTL"><strong>يعتبر عمق منطقة قاع منطقة البحث للطوربيد (ام يو-90) ضحل جدا عند عمق أقل من......متر</strong></p>{}
+
+
+
+
+// question: 127139  name: Q2
+::Q2::[html]<p dir\="RTL"><strong>يعتبر عمق منطقة قاع منطقة البحث للطوربيد (ام يو-90) ضحل عند عمق ما بين 50 - ......متر</strong></p>{}
+
+
+// question: 127140  name: Q3
+::Q3::[html]<p dir\="RTL"><strong>يعتبر عمق منطقة قاع منطقة البحث للطوربيد (ام يو-90) متوسط عند عمق ما بين 150 - ......متر</strong></p>{}
+
+
+
+
+// question: 127141  name: Q4
+::Q4::[html]<p dir\="RTL"><strong>يعتبر عمق منطقة قاع منطقة البحث للطوربيد (ام يو-90) عميق عند عمق أكبر من......متر</strong></p>{}
+
+
+// question: 127142  name: Q5
+::Q5::[html]<p dir\="RTL"><strong>بما تفسر: أهمية معرفة مدي الاكتشاف</strong></p>{}
+
+// question: 127138  name: Q6
+::Q6::[html]<p dir\="RTL"><strong>اذكر أنظمة بحث الطوربيد (ام يو-90)</strong></p>{}
+
+

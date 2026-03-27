@@ -1,0 +1,30 @@
+﻿// question: 0  name: Switch category to $course$/top/ESSAY
+$CATEGORY: $course$/top/ESSAY
+
+
+// question: 0  name: Switch category to $course$/top/ESSAY/TOPIC 11
+$CATEGORY: $course$/top/ESSAY/TOPIC 11
+
+
+// question: 127138  name: Q1
+::Q1::[html]<p dir\="RTL"><strong>الوقت اللازم لتنفيذ اطلاق طوربيد (ام يو-90) بعد اختبار أنبوب الاطلاق وبدء تبادل معلومات الاطلاق بين القواعد والطوربيد هو ........ ثانية</strong></p>{}
+
+
+
+
+// question: 127139  name: Q2
+::Q2::[html]<p dir\="RTL"><strong>الزمن التقريبي لتنفيذ شكل خماسي الأضلاع بواسطة طوربيد (ام يو-90) لتنفيذ نظام البحث الدائري هو........ ثانية</strong></p>{}
+
+
+// question: 127140  name: Q3
+::Q3::[html]<p dir\="RTL"><strong>يتم اختيار نصف قطر منطقة البحث لنظام البحث المحدد للطوربيد (ام يو-90) ليكون من 200متر حتي ..... متر</strong></p>{}
+
+
+
+
+// question: 127141  name: Q4
+::Q4::[html]<p dir\="RTL"><strong>علل:أثناء مرحلة الاتزان، يتم التأكد من الأعماق</strong></p>{}
+
+
+// question: 127142  name: Q5
+::Q5::[html]<p dir\="RTL"><strong>علل لمعرفة المسافة المطلوبة للوصول إلي عمق البحث</strong></p>{}

@@ -1,0 +1,45 @@
+﻿// question: 0  name: Switch category to $course$/top/ESSAY
+$CATEGORY: $course$/top/ESSAY
+
+
+// question: 0  name: Switch category to $course$/top/ESSAY/TOPIC 8
+$CATEGORY: $course$/top/ESSAY/TOPIC 8
+
+
+// question: 127138  name: Q1
+::Q1::[html]<p dir\="RTL"><strong>- قطر الطوربيد MU-90:.........مم</strong></p>{}
+
+
+
+
+// question: 127139  name: Q2
+::Q2::[html]<p dir\="RTL"><strong>- سرعة الطوربيد MU-90 هي: .........عقدة.</strong></p>{}
+
+
+// question: 127140  name: Q3
+::Q3::[html]<p dir\="RTL"><strong>- أقصي حالة بحر لعمل الطوربيد MU-90 هي: .........بيفورت.</strong></p>{}
+
+
+
+
+// question: 127141  name: Q4
+::Q4::[html]<p dir\="RTL"><strong>- أقل عمق للقاع عند اطلاق الطوربيد MU-90 ..... متر.</strong></p>{}
+
+
+// question: 127142  name: Q5
+::Q5::[html]<p dir\="RTL"><strong>- مدي العمل في حالة الإطلاق الثعباني للطوربيد MU-90 ............. كم.</strong></p>{}
+
+// question: 127138  name: Q6
+::Q6::[html]<p dir\="RTL"><strong> الوظائف الرئيسية للمرسل بقطاع المستشعرات اذكر SAVالخاص بالطوربيد MU-90.</strong></p>{}
+
+
+
+
+// question: 127139  name: Q7
+::Q7::[html]<p dir\="RTL"><strong>  الوظائف الرئيسية للمستقبل بقطاع المستشعرات اذكر SAVالخاص بالطوربيد MU-90</strong></p>{}
+
+
+// question: 127140  name: Q8
+::Q8::[html]<p dir\="RTL"><strong> طرق معالجة وتحديث البيانات بالطوربيد MU-90 اذكر.</strong></p>{}
+
+

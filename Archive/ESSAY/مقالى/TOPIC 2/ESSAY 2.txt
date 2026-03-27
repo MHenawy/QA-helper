@@ -1,0 +1,44 @@
+﻿// question: 0  name: Switch category to $course$/top/ESSAY
+$CATEGORY: $course$/top/ESSAY
+
+
+// question: 0  name: Switch category to $course$/top/ESSAY/TOPIC 2
+$CATEGORY: $course$/top/ESSAY/TOPIC 2
+
+
+// question: 127138  name: Q1
+::Q1::[html]<p dir\="RTL"><strong>1-	نوع طابة الطوربيد سي هاك مود 4.</strong></p>{}
+
+
+
+
+// question: 127139  name: Q2
+::Q2::[html]<p dir\="RTL"><strong>2-	مكونات منظومة سونار الطوربيد سي هاك مود 4.</strong></p>{}
+
+
+// question: 127140  name: Q3
+::Q3::[html]<p dir\="RTL"><strong>1-	تميز الطوربيد سي هاك مود 4 بمدي كبير يصل إلي ........ كم.</strong></p>{}
+
+
+
+
+// question: 127141  name: Q4
+::Q4::[html]<p dir\="RTL"><strong>2-	تعمل الطابة التقاربية لطوربيد السي هاك بنظام: المجال
+............. 
+</strong></p>{}
+
+
+// question: 127142  name: Q5
+::Q5::[html]<p dir\="RTL"><strong>4-	تعمل أجهزة التوجيه الذاتي لطوربيد السي هاك باستخدام المجال 
+......... .
+</strong></p>{}
+
+// question: 127138  name: Q6
+::Q6::[html]<p dir\="RTL"><strong>1-	علل  يجب علي سفينة السطح التي أطلقت الطوربيد أن تقوم بالدوران إلي خط سير عكس اتجاه الإطلاق.</strong></p>{}
+
+
+
+
+// question: 127139  name: Q7
+::Q7::[html]<p dir\="RTL"><strong>2-	أهمية وجود سلك الألياف الضوئية بطوربيد السي هاك.</strong></p>{}
+

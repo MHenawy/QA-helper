@@ -1,0 +1,26 @@
+﻿// question: 0  name: Switch category to $course$/top/ESSAY
+$CATEGORY: $course$/top/ESSAY
+
+
+// question: 0  name: Switch category to $course$/top/ESSAY/TOPIC 4
+$CATEGORY: $course$/top/ESSAY/TOPIC 4
+
+
+// question: 127138  name: Q1
+::Q1::[html]<p dir\="RTL"><strong>إذكر مراحل امان الطوربيد السي هيك اثناء النقل والتداول والتحميل واالإطلاق؟</strong></p>{}
+
+
+
+
+// question: 127139  name: Q2
+::Q2::[html]<p dir\="RTL"><strong>إذكر الاستخدام التكتيكى لنقاط التحول Wayp point  للطوربيد السي هيك؟</strong></p>{}
+
+
+// question: 127140  name: Q3
+::Q3::[html]<p dir\="RTL"><strong>إذكر مستويات الصيانة الدورية للطوربيد السي هيك ؟</strong></p>{}
+
+
+
+
+// question: 127141  name: Q4
+::Q4::[html]<p dir\="RTL"><strong>استخدامات أجهزة التوجيه الذاتي للطوربيد التدريبي.</strong></p>{}

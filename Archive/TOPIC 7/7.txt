@@ -1,0 +1,11 @@
+﻿// question: 0  name: Switch category to $course$/top/ESSAY
+$CATEGORY: $course$/top/ESSAY
+
+
+// question: 0  name: Switch category to $course$/top/ESSAY/TOPIC 7
+$CATEGORY: $course$/top/ESSAY/TOPIC 7
+
+
+// question: 127138  name: Q1
+::Q1::[html]<p dir\="RTL"><strong>إذكر الغرض من تصميم الطابة التقاربية بالطوربيد؟</strong></p>{}
+

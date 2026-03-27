@@ -1,0 +1,8 @@
+﻿طول الطوربيد التمرينى MK46 Mod5 هو 200 بوصة 
+A) TRUE
+B) FALSE
+ANSWER: B
+قطر الطوربيد التمرينى MK46 Mod5 هو 12,8 بوصة 
+A) TRUE
+B) FALSE
+ANSWER: A
