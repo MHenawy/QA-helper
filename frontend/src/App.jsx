@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Plus, Trash2, Upload, FileText, Download, CheckCircle, AlertCircle, Play, Printer, FileDown } from 'lucide-react';
 import html2pdf from 'html2pdf.js';
 
-const API_BASE = 'http://localhost:8000/api';
+const API_BASE = import.meta.env.VITE_API_BASEURL || 'http://localhost:8000/api';
 
 function App() {
   const [topics, setTopics] = useState([]);
