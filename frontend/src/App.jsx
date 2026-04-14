@@ -29,6 +29,7 @@ function App() {
   const [useCustomTopic, setUseCustomTopic] = useState(false);
   const [useCustomType, setUseCustomType] = useState(false);
   const fileInputRef = useRef(null);
+  const folderInputRef = useRef(null);
 
   useEffect(() => {
     fetchMetadata();
@@ -121,7 +122,7 @@ function App() {
     }
   };
 
-  const handleUploadClick = () => {
+  const handleUploadFileClick = () => {
     if (!uploadTopic) {
       setError("Please specify a topic name for the upload");
       return;
@@ -129,29 +130,55 @@ function App() {
     fileInputRef.current.click();
   };
 
-  const handleFileChange = async (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
+  const handleUploadFolderClick = () => {
+    if (!uploadTopic) {
+      setError("Please specify a topic name for the upload");
+      return;
+    }
+    folderInputRef.current.click();
+  };
 
-    const formData = new FormData();
-    formData.append('file', file);
+  const handleFileChange = async (e) => {
+    const files = Array.from(e.target.files);
+    if (!files || files.length === 0) return;
 
     setUploadStatus('Uploading...');
     setError(null);
+    let totalAdded = 0;
+    let validFilesAssessed = 0;
 
     try {
-      const res = await axios.post(`${API_BASE}/upload`, formData, {
-        params: { topic: uploadTopic, q_type: uploadType },
-        headers: { 'Content-Type': 'multipart/form-data' }
-      });
-      setUploadStatus(`Success! Added ${res.data.added_count} questions.`);
+      for (const file of files) {
+        // If from a folder upload, filter supported extensions
+        const extMatch = file.name.match(/\.(pdf|docx|txt|rtf)$/i);
+        if (!extMatch) continue;
+        validFilesAssessed++;
+
+        const formData = new FormData();
+        formData.append('file', file);
+
+        const res = await axios.post(`${API_BASE}/upload`, formData, {
+          params: { topic: uploadTopic, q_type: uploadType },
+          headers: { 'Content-Type': 'multipart/form-data' }
+        });
+        totalAdded += res.data.added_count;
+      }
+      
+      if (validFilesAssessed === 0) {
+          setError("No supported formats found in the selection.");
+          setUploadStatus('');
+      } else {
+          setUploadStatus(`Success! Added ${totalAdded} total questions from ${validFilesAssessed} files.`);
+      }
+      
       fetchMetadata(); // Refresh topics
       
-      // Clear input
+      // Clear inputs
       if (fileInputRef.current) fileInputRef.current.value = '';
+      if (folderInputRef.current) folderInputRef.current.value = '';
     } catch (err) {
       setUploadStatus('Upload failed');
-      const msg = err.response?.data?.detail || err.message || "Failed to upload file.";
+      const msg = err.response?.data?.detail || err.message || "Failed to upload files.";
       setError(msg);
     }
   };
@@ -486,13 +513,33 @@ function App() {
               ref={fileInputRef} 
               style={{ display: 'none' }} 
               accept=".pdf,.docx,.txt" 
+              multiple
+              onChange={handleFileChange} 
+            />
+            <input 
+              type="file" 
+              ref={folderInputRef} 
+              style={{ display: 'none' }} 
+              webkitdirectory="true"
+              directory="true"
               onChange={handleFileChange} 
             />
             
-            <div className="upload-zone" onClick={handleUploadClick}>
-              <Upload size={32} color="var(--primary-color)" style={{ margin: '0 auto 1rem auto' }} />
-              <div style={{ fontWeight: '500', color: '#e2e8f0', marginBottom: '0.5rem' }}>Click to Browse Files</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Supported formats: PDF, DOCX, TXT</div>
+            <div style={{ display: 'flex', gap: '1rem' }}>
+              <div className="upload-zone" style={{ flex: 1 }} onClick={handleUploadFileClick}>
+                <Upload size={32} color="var(--primary-color)" style={{ margin: '0 auto 1rem auto' }} />
+                <div style={{ fontWeight: '500', color: '#e2e8f0', marginBottom: '0.5rem' }}>Select File(s)</div>
+                <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Upload one or multiple files</div>
+              </div>
+              <div className="upload-zone" style={{ flex: 1 }} onClick={handleUploadFolderClick}>
+                <FileText size={32} color="#34d399" style={{ margin: '0 auto 1rem auto' }} />
+                <div style={{ fontWeight: '500', color: '#e2e8f0', marginBottom: '0.5rem' }}>Select Folder</div>
+                <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Bulk upload all files in a folder</div>
+              </div>
+            </div>
+            
+            <div style={{ textAlign: 'center', marginTop: '0.75rem', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+              Supported file formats: PDF, DOCX, TXT
             </div>
             
             {uploadStatus && (
